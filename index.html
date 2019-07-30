@@ -1,0 +1,1775 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <title>AuMarcher</title>
+  <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="e-commerce site well design with responsive view." />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link href="image/favicon.png" rel="icon" type="image/png">
+  <link href="css/bootstrap.min.css" rel="stylesheet" media="screen" />
+  <link href="javascript/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700" rel="stylesheet" />
+  <link href="css/stylesheet.css" rel="stylesheet">
+  <link href="css/responsive.css" rel="stylesheet">
+  <link href="javascript/owl-carousel/owl.carousel.css" type="text/css" rel="stylesheet" media="screen" />
+  <link href="javascript/owl-carousel/owl.transitions.css" type="text/css" rel="stylesheet" media="screen" />
+</head>
+
+<body class="index">
+  <div class="preloader loader" style="display: block;"> <img src="image/loader.gif" alt="#" /></div>
+  <header>
+    <div class="header-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="top-left pull-left">
+              <div class="language">
+                <form action="#" method="post" enctype="multipart/form-data" id="language">
+                  <div class="btn-group">
+                    <button class="btn btn-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false"> Francais
+                      <span class="caret"></span></button>
+                    <ul class="dropdown-menu">
+                      <li><a href="#"> French</a></li>
+                      <li><a href="#"> English</a></li>
+                    </ul>
+                  </div>
+                </form>
+              </div>
+              <div class="currency">
+                <form action="#" method="post" enctype="multipart/form-data" id="currency">
+                  <div class="btn-group">
+                    <button class="btn btn-link dropdown-toggle" data-toggle="dropdown"> <strong>USD</strong> <span
+                        class="caret"></span> </button>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">FCfa</a></li>
+                      <li><a href="#">Euro</a></li>
+                      <li><a href="#">USD</a></li>
+                    </ul>
+                  </div>
+                </form>
+              </div>
+              <div class="wel-come-msg"> Bienvenue au marcher ! </div>
+            </div>
+            <div class="top-right pull-right">
+              <div id="top-links" class="nav pull-right">
+                <ul class="list-inline">
+                  <li class="dropdown"><a href="#" title="My Account" class="dropdown-toggle" data-toggle="dropdown"><i
+                        class="fa fa-user" aria-hidden="true"></i><span>Mon Compte</span> <span
+                        class="caret"></span></a>
+                    <ul class="dropdown-menu dropdown-menu-right">
+                      <li><a href="register.html">Register</a></li>
+                      <li><a href="login.html">Login</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#" id="wishlist-total" title="Wish List (0)"><i class="fa fa-heart"
+                        aria-hidden="true"></i><span>Liste des souhaits</span><span> (0)</span></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="header-inner">
+        <div class="col-sm-3 col-xs-3 header-left">
+          <div id="logo"> <a href="index.html"><img src="image/logo.png" title="E-Commerce" alt="E-Commerce"
+                class="img-responsive" /></a> </div>
+        </div>
+        <div class="col-sm-9 col-xs-9 header-right">
+          <div id="search" class="input-group">
+            <input type="text" name="search" value="" placeholder="Rechercher ..." class="form-control input-lg" />
+            <span class="input-group-btn">
+              <button type="button" class="btn btn-default btn-lg"><span>Recherche</span></button>
+            </span> </div>
+          <div id="cart" class="btn-group btn-block">
+            <button type="button" class="btn btn-inverse btn-block btn-lg dropdown-toggle cart-dropdown-button"> <span
+                id="cart-total"> <span>Shopping Cart</span><br>
+                3 Produit(s) - 20000 FCfa</span></button>
+            <ul class="dropdown-menu pull-right cart-dropdown-menu">
+              <li>
+                <table class="table table-striped">
+                  <tbody>
+                    <tr>
+                      <td class="text-center"><a href="#"><img class="img-thumbnail" title="lieu-jaune"
+                            alt="lorem ippsum dolor dummy" src="image/product/lieu-jaune-56-32.png"></a></td>
+                      <td class="text-left"><a href="#">lieu-jaune</a></td>
+                      <td class="text-right">x 1</td>
+                      <td class="text-right">1000 FCfa</td>
+                      <td class="text-center"><button class="btn btn-danger btn-xs" title="Remove" type="button"><i
+                            class="fa fa-trash-o"></i></button></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li>
+                <table class="table table-striped">
+                  <tbody>
+                    <tr>
+                      <td class="text-center"><a href="#"><img class="img-thumbnail" title="bar-sauvage"
+                            alt="lorem ippsum dolor dummy" src="image/product/bar-sauvage-52-26.jpg"></a></td>
+                      <td class="text-left"><a href="#">bar-sauvage</a></td>
+                      <td class="text-right">x 2</td>
+                      <td class="text-right">15.000 FCfa</td>
+                      <td class="text-center"><button class="btn btn-danger btn-xs" title="Remove" type="button"><i
+                            class="fa fa-times"></i></button></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li>
+                <table class="table table-striped">
+                  <tbody>
+                    <tr>
+                      <td class="text-center"><a href="#"><img class="img-thumbnail" title="lorem ippsum dolor dummy"
+                            alt="lorem ippsum dolor dummy"
+                            src="image/product/carpe-videe-la-piece-13kg - Copie.jpg"></a></td>
+                      <td class="text-left"><a href="#">carpe</a></td>
+                      <td class="text-right">x 3</td>
+                      <td class="text-right">1.500FCfa</td>
+                      <td class="text-center"><button class="btn btn-danger btn-xs" title="Remove" type="button"><i
+                            class="fa fa-times"></i></button></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li>
+                <div>
+                  <table class="table table-bordered">
+                    <tbody>
+                      <tr>
+                        <td class="text-right"><strong>Sub Total</strong></td>
+                        <td class="text-right">210.000FCfa</td>
+                      </tr>
+                      <tr>
+                        <td class="text-right"><strong>Eco Tax (-2.00)</strong></td>
+                        <td class="text-right">2.000FCfa</td>
+                      </tr>
+                      <tr>
+                        <td class="text-right"><strong>TVA (18%)</strong></td>
+                        <td class="text-right">42.000FCfa</td>
+                      </tr>
+                      <tr>
+                        <td class="text-right"><strong>Total</strong></td>
+                        <td class="text-right">254.000FCfa</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <p class="text-right"> <span class="btn-viewcart"><a href="cart.html"><strong><i
+                            class="fa fa-shopping-cart"></i>Panier</strong></a></span> <span class="btn-checkout"><a
+                        href="checkout.html"><strong><i class="fa fa-share"></i>Caisse</strong></a></span> </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- menu de navigation -->
+  <nav id="menu" class="navbar">
+    <div class="nav-inner">
+      <div class="navbar-header"><span id="category" class="visible-xs">Nos Produits Frais</span>
+        <button type="button" class="btn btn-navbar navbar-toggle"><i class="fa fa-bars"></i></button>
+      </div>
+      <div class="navbar-collapse">
+        <ul class="main-navigation">
+          <li><a href="index.html" class="parent"><i class="fa fa-home" aria-hidden="true"></i></a> </li>
+          <li class="dropdown"><a href="category.html" class="parent">Nos Produits</a></li>
+          <li><a href="category.html" class="parent">Poisson frais entier vidé</a> </li>
+          <li><a href="category.html" class="parent">Filets et pavés de poisson frais</a> </li>
+          <li><a href="category.html" class="parent">Fruits de Mer, Huîtres et Cruistacés</a> </li>
+          <li><a href="#" class="active parent">Nos Services <span class="caret"></span> </a>
+            <ul>
+              <li><a href="about-us.html">Au Marcher </a></li>
+              <li><a href="contact.html">Nous Contacter</a> </li>
+              <li><a href="contact.html">Point de vente</a> </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <hr>
+  <!-- carousel -->
+  <div class="mainbanner carousel slide" data-ride="carousel">
+    <div id="main-banner" class="owl-carousel home-slider carousel-inner">
+      <div class="item carousel-item"> <a href="#"><img src="image/banners/img-poisson/bar-sauvage.jpg"
+            alt="main-banner1" class="img-responsive" /></a>
+      </div>
+      <div class="item carousel-item"> <a href="#"><img src="image/banners/img-poisson/crevettes-grises.jpg"
+            alt="main-banner2" class="img-responsive" /></a>
+      </div>
+      <div class="item carousel-item"> <a href="#"><img src="image/banners/img-poisson/saumon-ecosse.jpg"
+            alt="main-banner3" class="img-responsive" /></a>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <!-- /carousel  -->
+
+  <!-- Produits  -->
+  <div class="container-fluid">
+    <div class="cms_banner">
+      <!-- ligne 1 -->
+      <div class="row">
+        <div class="col-md-3 col-sm-6 col-xs-12">
+          <div class=" hovereffect" style="width: 100%;">
+            <img src="image/banners/img-poisson/carpe-videe-la-piece-13kg - Copie.jpg" class="card-img-top" alt="...">
+            <div class=" overlay">
+              <h2 class="">Poissons frais</h2>
+              <p>Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <a href="category.html" class="info"><i class="fa fa-eye" aria-hidden="true"></i> </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-12">
+          <div class=" hovereffect" style="width: 100%;">
+            <img src="image/banners/img-poisson/filet-de-lieu-noir-lot-de-1kg-.jpg" class="card-img-top" alt="...">
+            <div class=" overlay">
+              <h2 class="">Poissons frais entier vidé</h2>
+              <p>Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <a href="category.html" class="info"><i class="fa fa-eye" aria-hidden="true"></i> </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-12">
+          <div class=" hovereffect" style="width: 100%;">
+            <img src="image/banners/img-poisson/filet-de-merlan-100200-lot-de-1kg- - Copie.jpg" class="card-img-top"
+              alt="...">
+            <div class=" overlay">
+              <h2 class="">Filets et pavés de poison frais</h2>
+              <p>Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <a href="category.html" class="info"><i class="fa fa-eye" aria-hidden="true"></i> </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-12">
+          <div class=" hovereffect" style="width: 100%;">
+            <img src="image/product/homard-canadien-cuit-piece-de-450g-a-550g.jpg" class="card-img-top" alt="...">
+            <div class=" overlay">
+              <h2 class="">Huître et Cruistacés</h2>
+              <p>Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <a href="#" class="info"><i class="fa fa-eye" aria-hidden="true"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ligne 1 -->
+
+      <!-- ligne 2 -->
+      <div class="row">
+
+        <!-- /ligne 2 -->
+      </div>
+    </div>
+  </div>
+  <hr>
+  <!-- /carousel -->
+  <div id="center">
+    <div class="container">
+      <div class="row">
+        <div class="content col-sm-12">
+          <div class="customtab">
+            <h3 class="productblock-title">Notre Collection de poisson </h3>
+            <div id="tabs" class="customtab-wrapper">
+              <ul class='customtab-inner'>
+                <li class='tab'><a href="#tab-furnitur">Populaire</a></li>
+                <li class='tab'><a href="#tab-livin">Les plus vendues</a></li>
+                <li class='tab'><a href="#tab-kitche">Speciales</a></li>
+                <li class='tab'><a href="#tab-outdoo">Nouveau arrivage</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- tab-furniture-->
+          <div id="tab-furnitur" class="tab-content">
+            <div class="product-layout  product-grid  col-lg-3 col-md-4 col-sm-6 col-xs-12">
+              <div class="item">
+                <div class="product-thumb">
+                  <div class="image product-imageblock">
+                    <a href="product.html">
+                      <img src="image/product/fera-du-lac-2-pieces-622-622.jpg" alt="fera-du-lac" title="fera-du-lac"
+                        class="img-responsive" />
+                      <img src="image/product/fera-du-lac-2-pieces-622-622.jpg" alt="fera-du-lac" title="fera-du-lac"
+                        class="img-responsive" />
+                    </a>
+                    <ul class="button-group">
+                      <li>
+                        <button type="button" class="wishlist" data-toggle="tooltip" data-placement="top"
+                          title="Ajouter a la liste des voeux"><i class="fa fa-heart-o"></i></button>
+                      </li>
+                      <li>
+                        <button type="button" class="quick-view" data-toggle="tooltip" data-placement="top"
+                          title="Appercu rapide"><i class="fa fa-eye"></i></button>
+                      </li>
+                      <li>
+                        <button type="button" class="addtocart-btn" title="Ajouter au panier"> <i
+                            class="fa fa-cart-plus" aria-hidden="true"></i> </button>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="caption product-detail">
+                    <div class="rating">
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i
+                          class="fa fa-star fa-stack-2x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i
+                          class="fa fa-star fa-stack-2x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i
+                          class="fa fa-star fa-stack-2x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i
+                          class="fa fa-star fa-stack-2x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    </div>
+                    <h4 class="product-name"><a href="#" title="Casual Shirt With Ruffle Hem">fera du lac</a></h4>
+                    <p class="price product-price">122.00 fcfa<span class="price-tax"></span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product-layout  product-grid  col-lg-3 col-md-4 col-sm-6 col-xs-12">
+              <div class="item">
+                <div class="product-thumb">
+                  <div class="image product-imageblock">
+                    <a href="product.html">
+                      <img src="image/product/fera-du-lac-2-pieces-622-622.jpg" alt="fera-du-lac" title="fera-du-lac"
+                        class="img-responsive" />
+                      <img src="image/product/fera-du-lac-2-pieces-622-622.jpg" alt="fera-du-lac" title="fera-du-lac"
+                        class="img-responsive" />
+                    </a>
+                    <ul class="button-group">
+                      <li>
+                        <button type="button" class="wishlist" data-toggle="tooltip" data-placement="top"
+                          title="Ajouter a la liste des voeux"><i class="fa fa-heart-o"></i></button>
+                      </li>
+                      <li>
+                        <button type="button" class="quick-view" data-toggle="tooltip" data-placement="top"
+                          title="Appercu rapide"><i class="fa fa-eye"></i></button>
+                      </li>
+                      <li>
+                        <button type="button" class="addtocart-btn" title="Ajouter au panier"> <i
+                            class="fa fa-cart-plus" aria-hidden="true"></i> </button>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="caption product-detail">
+                    <div class="rating">
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i
+                          class="fa fa-star fa-stack-2x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i
+                          class="fa fa-star fa-stack-2x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i
+                          class="fa fa-star fa-stack-2x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i
+                          class="fa fa-star fa-stack-2x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    </div>
+                    <h4 class="product-name"><a href="#" title="Casual Shirt With Ruffle Hem">fera du lac</a></h4>
+                    <p class="price product-price">122.00 fcfa<span class="price-tax">Ex Tax: $100.00</span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product-layout  product-grid  col-lg-3 col-md-4 col-sm-6 col-xs-12">
+              <div class="item">
+                <div class="product-thumb">
+                  <div class="image product-imageblock">
+                    <a href="product.html">
+                      <img src="image/product/fera-du-lac-2-pieces-622-622.jpg" alt="fera-du-lac" title="fera-du-lac"
+                        class="img-responsive" />
+                      <img src="image/product/fera-du-lac-2-pieces-622-622.jpg" alt="fera-du-lac" title="fera-du-lac"
+                        class="img-responsive" />
+                    </a>
+                    <ul class="button-group">
+                      <li>
+                        <button type="button" class="wishlist" data-toggle="tooltip" data-placement="top"
+                          title="Ajouter a la liste des voeux"><i class="fa fa-heart-o"></i></button>
+                      </li>
+                      <li>
+                        <button type="button" class="quick-view" data-toggle="tooltip" data-placement="top"
+                          title="Appercu rapide"><i class="fa fa-eye"></i></button>
+                      </li>
+                      <li>
+                        <button type="button" class="addtocart-btn" title="Ajouter au panier"> <i
+                            class="fa fa-cart-plus" aria-hidden="true"></i> </button>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="caption product-detail">
+                    <div class="rating">
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i
+                          class="fa fa-star fa-stack-2x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i
+                          class="fa fa-star fa-stack-2x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i
+                          class="fa fa-star fa-stack-2x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i
+                          class="fa fa-star fa-stack-2x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    </div>
+                    <h4 class="product-name"><a href="#" title="Casual Shirt With Ruffle Hem">fera du lac</a></h4>
+                    <p class="price product-price">122.00 fcfa<span class="price-tax">Ex Tax: $100.00</span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product-layout  product-grid  col-lg-3 col-md-4 col-sm-6 col-xs-12">
+              <div class="item">
+                <div class="product-thumb">
+                  <div class="image product-imageblock">
+                    <a href="product.html">
+                      <img src="image/product/fera-du-lac-2-pieces-622-622.jpg" alt="fera-du-lac" title="fera-du-lac"
+                        class="img-responsive" />
+                      <img src="image/product/fera-du-lac-2-pieces-622-622.jpg" alt="fera-du-lac" title="fera-du-lac"
+                        class="img-responsive" />
+                    </a>
+                    <ul class="button-group">
+                      <li>
+                        <button type="button" class="wishlist" data-toggle="tooltip" data-placement="top"
+                          title="Ajouter a la liste des voeux"><i class="fa fa-heart-o"></i></button>
+                      </li>
+                      <li>
+                        <button type="button" class="quick-view" data-toggle="tooltip" data-placement="top"
+                          title="Appercu rapide"><i class="fa fa-eye"></i></button>
+                      </li>
+                      <li>
+                        <button type="button" class="addtocart-btn" title="Ajouter au panier"> <i
+                            class="fa fa-cart-plus" aria-hidden="true"></i> </button>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="caption product-detail">
+                    <div class="rating">
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i
+                          class="fa fa-star fa-stack-2x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i
+                          class="fa fa-star fa-stack-2x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i
+                          class="fa fa-star fa-stack-2x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i
+                          class="fa fa-star fa-stack-2x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    </div>
+                    <h4 class="product-name"><a href="#" title="Casual Shirt With Ruffle Hem">fera du lac</a></h4>
+                    <p class="price product-price">122.00 fcfa<span class="price-tax">Ex Tax: 1000fr</span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product-layout  product-grid  col-lg-3 col-md-4 col-sm-6 col-xs-12">
+              <div class="item">
+                <div class="product-thumb">
+                  <div class="image product-imageblock">
+                    <a href="product.html">
+                      <img src="image/product/crustaces.jpg" alt="fera-du-lac" title="fera-du-lac"
+                        class="img-responsive" />
+                      <img src="image/product/crustaces.jpg" alt="fera-du-lac" title="fera-du-lac"
+                        class="img-responsive" />
+                    </a>
+                    <ul class="button-group">
+                      <li>
+                        <button type="button" class="wishlist" data-toggle="tooltip" data-placement="top"
+                          title="Ajouter a la liste des voeux"><i class="fa fa-heart-o"></i></button>
+                      </li>
+                      <li>
+                        <button type="button" class="quick-view" data-toggle="tooltip" data-placement="top"
+                          title="Appercu rapide"><i class="fa fa-eye"></i></button>
+                      </li>
+                      <li>
+                        <button type="button" class="addtocart-btn" title="Ajouter au panier"> <i
+                            class="fa fa-cart-plus" aria-hidden="true"></i> </button>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="caption product-detail">
+                    <div class="rating">
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i
+                          class="fa fa-star fa-stack-2x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i
+                          class="fa fa-star fa-stack-2x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i
+                          class="fa fa-star fa-stack-2x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i
+                          class="fa fa-star fa-stack-2x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    </div>
+                    <h4 class="product-name"><a href="#" title="Casual Shirt With Ruffle Hem">fera du lac</a></h4>
+                    <p class="price product-price">122.00 fcfa<span class="price-tax">Ex Tax: $100.00</span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product-layout  product-grid  col-lg-3 col-md-4 col-sm-6 col-xs-12">
+              <div class="item">
+                <div class="product-thumb">
+                  <div class="image product-imageblock">
+                    <a href="product.html">
+                      <img src="image/product/crustaces.jpg" alt="fera-du-lac" title="fera-du-lac"
+                        class="img-responsive" />
+                      <img src="image/product/crustaces.jpg" alt="fera-du-lac" title="fera-du-lac"
+                        class="img-responsive" />
+                    </a>
+                    <ul class="button-group">
+                      <li>
+                        <button type="button" class="wishlist" data-toggle="tooltip" data-placement="top"
+                          title="Ajouter a la liste des voeux"><i class="fa fa-heart-o"></i></button>
+                      </li>
+                      <li>
+                        <button type="button" class="quick-view" data-toggle="tooltip" data-placement="top"
+                          title="Appercu rapide"><i class="fa fa-eye"></i></button>
+                      </li>
+                      <li>
+                        <button type="button" class="addtocart-btn" title="Ajouter au panier"> <i
+                            class="fa fa-cart-plus" aria-hidden="true"></i> </button>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="caption product-detail">
+                    <div class="rating">
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i
+                          class="fa fa-star fa-stack-2x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i
+                          class="fa fa-star fa-stack-2x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i
+                          class="fa fa-star fa-stack-2x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i
+                          class="fa fa-star fa-stack-2x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    </div>
+                    <h4 class="product-name"><a href="#" title="Casual Shirt With Ruffle Hem">fera du lac</a></h4>
+                    <p class="price product-price">122.00 fcfa<span class="price-tax">Ex Tax: $100.00</span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product-layout  product-grid  col-lg-3 col-md-4 col-sm-6 col-xs-12">
+              <div class="item">
+                <div class="product-thumb">
+                  <div class="image product-imageblock">
+                    <a href="product.html">
+                      <img src="image/product/filet-de-cabillaud-lot-de-1kg-.jpg" alt="fera-du-lac" title="fera-du-lac"
+                        class="img-responsive" />
+                      <img src="image/product/filet-de-cabillaud-lot-de-1kg-.jpg" alt="fera-du-lac" title="fera-du-lac"
+                        class="img-responsive" />
+                    </a>
+                    <ul class="button-group">
+                      <li>
+                        <button type="button" class="wishlist" data-toggle="tooltip" data-placement="top"
+                          title="Ajouter a la liste des voeux"><i class="fa fa-heart-o"></i></button>
+                      </li>
+                      <li>
+                        <button type="button" class="quick-view" data-toggle="tooltip" data-placement="top"
+                          title="Appercu rapide"><i class="fa fa-eye"></i></button>
+                      </li>
+                      <li>
+                        <button type="button" class="addtocart-btn" title="Ajouter au panier"> <i
+                            class="fa fa-cart-plus" aria-hidden="true"></i> </button>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="caption product-detail">
+                    <div class="rating">
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i
+                          class="fa fa-star fa-stack-2x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i
+                          class="fa fa-star fa-stack-2x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i
+                          class="fa fa-star fa-stack-2x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i
+                          class="fa fa-star fa-stack-2x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    </div>
+                    <h4 class="product-name"><a href="#" title="Casual Shirt With Ruffle Hem">fera du lac</a></h4>
+                    <p class="price product-price">122.00 fcfa<span class="price-tax">Ex Tax: $100.00</span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product-layout  product-grid  col-lg-3 col-md-4 col-sm-6 col-xs-12">
+              <div class="item">
+                <div class="product-thumb">
+                  <div class="image product-imageblock">
+                    <a href="product.html">
+                      <img src="image/product/cuisse-de-grenouille-parisienne-lot-de-1kg- - Copie.jpg" alt="fera-du-lac" title="fera-du-lac"
+                        class="img-responsive" />
+                      <img src="image/product/cuisse-de-grenouille-parisienne-lot-de-1kg- - Copie.jpg" alt="fera-du-lac" title="fera-du-lac"
+                        class="img-responsive" />
+                    </a>
+                    <ul class="button-group">
+                      <li>
+                        <button type="button" class="wishlist" data-toggle="tooltip" data-placement="top"
+                          title="Ajouter a la liste des voeux"><i class="fa fa-heart-o"></i></button>
+                      </li>
+                      <li>
+                        <button type="button" class="quick-view" data-toggle="tooltip" data-placement="top"
+                          title="Appercu rapide"><i class="fa fa-eye"></i></button>
+                      </li>
+                      <li>
+                        <button type="button" class="addtocart-btn" title="Ajouter au panier"> <i
+                            class="fa fa-cart-plus" aria-hidden="true"></i> </button>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="caption product-detail">
+                    <div class="rating">
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i
+                          class="fa fa-star fa-stack-2x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i
+                          class="fa fa-star fa-stack-2x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i
+                          class="fa fa-star fa-stack-2x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i
+                          class="fa fa-star fa-stack-2x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    </div>
+                    <h4 class="product-name"><a href="#" title="Casual Shirt With Ruffle Hem">fera du lac</a></h4>
+                    <p class="price product-price">122.00 fcfa<span class="price-tax">Ex Tax: $100.00</span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product-layout  product-grid  col-lg-3 col-md-4 col-sm-6 col-xs-12">
+              <div class="item">
+                <div class="product-thumb">
+                  <div class="image product-imageblock">
+                    <a href="product.html">
+                      <img src="image/product/filet-de-perche-520grs-colis-de-3kg-.jpg" alt="fera-du-lac" title="fera-du-lac"
+                        class="img-responsive" />
+                      <img src="image/product/filet-de-perche-520grs-colis-de-3kg-.jpg" alt="fera-du-lac" title="fera-du-lac"
+                        class="img-responsive" />
+                    </a>
+                    <ul class="button-group">
+                      <li>
+                        <button type="button" class="wishlist" data-toggle="tooltip" data-placement="top"
+                          title="Ajouter a la liste des voeux"><i class="fa fa-heart-o"></i></button>
+                      </li>
+                      <li>
+                        <button type="button" class="quick-view" data-toggle="tooltip" data-placement="top"
+                          title="Appercu rapide"><i class="fa fa-eye"></i></button>
+                      </li>
+                      <li>
+                        <button type="button" class="addtocart-btn" title="Ajouter au panier"> <i
+                            class="fa fa-cart-plus" aria-hidden="true"></i> </button>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="caption product-detail">
+                    <div class="rating">
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i
+                          class="fa fa-star fa-stack-2x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i
+                          class="fa fa-star fa-stack-2x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i
+                          class="fa fa-star fa-stack-2x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i
+                          class="fa fa-star fa-stack-2x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    </div>
+                    <h4 class="product-name"><a href="#" title="Casual Shirt With Ruffle Hem">fera du lac</a></h4>
+                    <p class="price product-price">122.00 fcfa<span class="price-tax">Ex Tax: $100.00</span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- voir tous les produits -->
+            <div class="viewmore">
+              <div class="btn "><a href="category.html">Voir Tous les produits</a></div>
+            </div>
+          </div>
+  <!--  -->
+  <div class="footer-top-cms parallax-container">
+    <div class="parallax"><img src="image/e-newsletter1_0.png" alt="#"></div>
+    <div class="container">
+      <div class="row">
+        <div class="newslatter">
+          <form>
+          <h5> INSCRIVEZ-VOUS POUR NOS RABAIS AUJOURD'HUI!</h5>
+            <h4 class="title-subline">Assurez-vous de suivre notre blog et de vous inscrire à toutes nos mises à jour!</h4>
+            <div class="input-group">
+              <input type="text" class=" form-control" placeholder="Your-email@website.com">
+              <button type="submit" value="Sign up" class="btn btn-large btn-primary">Subscribe</button>
+            </div>
+          </form>
+        </div>
+        <div class="footer-social">
+          <ul>
+            <li class="facebook"><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li class="linkedin"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+            <li class="twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
+            <li class="gplus"><a href="#"><i class="fa fa-google-plus"></i></a></li>
+            <li class="youtube"><a href="#"><i class="fa fa-youtube-play"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+          <!-- tab-living-->
+          <div id="tab-livin" class="tab-content">
+            <!--  product-layout 1-->
+            <div class="product-layout  product-grid  col-lg-3 col-md-4 col-sm-6 col-xs-12">
+              <div class="item">
+                <div class="product-thumb">
+                  <div class="image product-imageblock"> <a href="product.html"> <img
+                        src="image/product/fera-du-lac-2-pieces-622-622.jpg" alt="fera du lac" title="fera du lac"
+                        class="img-responsive" /> <img src="image/product/fera-du-lac-2-pieces-622-622.jpg"
+                        alt="fera du lac" title="fera du lac" class="img-responsive" /> </a>
+                    <ul class="button-group">
+                      <li>
+                        <button type="button" class="wishlist" data-toggle="tooltip" data-placement="top"
+                          title="Add to Wish List"><i class="fa fa-heart-o"></i></button>
+                      </li>
+                      <li>
+                        <button type="button" class="quick-view" data-toggle="tooltip" data-placement="top"
+                          title="Quick View"><i class="fa fa-eye"></i></button>
+                      </li>
+                      <li>
+                        <button type="button" class="addtocart-btn" title="Add to Cart"><i class="fa fa-cart-plus"
+                            aria-hidden="true"></i> </button>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="caption product-detail">
+                    <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i
+                          class="fa fa-star fa-stack-2x"></i></span> <span class="fa fa-stack"><i
+                          class="fa fa-star-o fa-stack-2x"></i><i class="fa fa-star fa-stack-2x"></i></span> <span
+                        class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i
+                          class="fa fa-star fa-stack-2x"></i></span> <span class="fa fa-stack"><i
+                          class="fa fa-star-o fa-stack-2x"></i><i class="fa fa-star fa-stack-2x"></i></span> <span
+                        class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span> </div>
+                    <h4 class="product-name"><a href="#" title="Casual Shirt With Ruffle Hem">Casual Shirt With Ruffle
+                        Hem</a></h4>
+                    <p class="price product-price">$122.00<span class="price-tax">Ex Tax: $100.00</span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- product-layout 2 -->
+            <div class="product-layout  product-grid  col-lg-3 col-md-4 col-sm-6 col-xs-12">
+              <div class="item">
+                <div class="product-thumb">
+                  <div class="image product-imageblock"> <a href="product.html"> <img
+                        src="image/product/fera-du-lac-2-pieces-622-622.jpg" alt="fera du lac" title="fera du lac"
+                        class="img-responsive" /> <img src="image/product/fera-du-lac-2-pieces-622-622.jpg"
+                        alt="fera du lac" title="fera du lac" class="img-responsive" /> </a>
+                    <ul class="button-group">
+                      <li>
+                        <button type="button" class="wishlist" data-toggle="tooltip" data-placement="top"
+                          title="Add to Wish List"><i class="fa fa-heart-o"></i></button>
+                      </li>
+                      <li>
+                        <button type="button" class="quick-view" data-toggle="tooltip" data-placement="top"
+                          title="Quick View"><i class="fa fa-eye"></i></button>
+                      </li>
+                      <li>
+                        <button type="button" class="addtocart-btn" title="Add to Cart"><i class="fa fa-cart-plus"
+                            aria-hidden="true"></i> </button>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="caption product-detail">
+                    <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i
+                          class="fa fa-star fa-stack-2x"></i></span> <span class="fa fa-stack"><i
+                          class="fa fa-star-o fa-stack-2x"></i><i class="fa fa-star fa-stack-2x"></i></span> <span
+                        class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i
+                          class="fa fa-star fa-stack-2x"></i></span> <span class="fa fa-stack"><i
+                          class="fa fa-star-o fa-stack-2x"></i><i class="fa fa-star fa-stack-2x"></i></span> <span
+                        class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span> </div>
+                    <h4 class="product-name"><a href="#" title="Casual Shirt With Ruffle Hem">Casual Shirt With Ruffle
+                        Hem</a></h4>
+                    <p class="price product-price">$122.00<span class="price-tax">Ex Tax: $100.00</span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- product-layout 3 -->
+            <div class="product-layout  product-grid  col-lg-3 col-md-4 col-sm-6 col-xs-12">
+              <div class="item">
+                <div class="product-thumb">
+                  <div class="image product-imageblock"> <a href="product.html"> <img
+                        src="image/product/fera-du-lac-2-pieces-622-622.jpg" alt="fera du lac" title="fera du lac"
+                        class="img-responsive" /> <img src="image/product/fera-du-lac-2-pieces-622-622.jpg"
+                        alt="fera du lac" title="fera du lac" class="img-responsive" /> </a>
+                    <ul class="button-group">
+                      <li>
+                        <button type="button" class="wishlist" data-toggle="tooltip" data-placement="top"
+                          title="Add to Wish List"><i class="fa fa-heart-o"></i></button>
+                      </li>
+                      <li>
+                        <button type="button" class="quick-view" data-toggle="tooltip" data-placement="top"
+                          title="Quick View"><i class="fa fa-eye"></i></button>
+                      </li>
+                      <li>
+                        <button type="button" class="addtocart-btn" title="Add to Cart"><i class="fa fa-cart-plus"
+                            aria-hidden="true"></i> </button>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="caption product-detail">
+                    <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i
+                          class="fa fa-star fa-stack-2x"></i></span> <span class="fa fa-stack"><i
+                          class="fa fa-star-o fa-stack-2x"></i><i class="fa fa-star fa-stack-2x"></i></span> <span
+                        class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i
+                          class="fa fa-star fa-stack-2x"></i></span> <span class="fa fa-stack"><i
+                          class="fa fa-star-o fa-stack-2x"></i><i class="fa fa-star fa-stack-2x"></i></span> <span
+                        class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span> </div>
+                    <h4 class="product-name"><a href="#" title="Casual Shirt With Ruffle Hem">Casual Shirt With Ruffle
+                        Hem</a></h4>
+                    <p class="price product-price">$122.00<span class="price-tax">Ex Tax: $100.00</span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- product-layout 4 -->
+            <div class="product-layout  product-grid  col-lg-3 col-md-4 col-sm-6 col-xs-12">
+              <div class="item">
+                <div class="product-thumb">
+                  <div class="image product-imageblock"> <a href="product.html"> <img
+                        src="image/product/fera-du-lac-2-pieces-622-622.jpg" alt="fera du lac" title="fera du lac"
+                        class="img-responsive" /> <img src="image/product/fera-du-lac-2-pieces-622-622.jpg"
+                        alt="fera du lac" title="fera du lac" class="img-responsive" /> </a>
+                    <ul class="button-group">
+                      <li>
+                        <button type="button" class="wishlist" data-toggle="tooltip" data-placement="top"
+                          title="Add to Wish List"><i class="fa fa-heart-o"></i></button>
+                      </li>
+                      <li>
+                        <button type="button" class="quick-view" data-toggle="tooltip" data-placement="top"
+                          title="Quick View"><i class="fa fa-eye"></i></button>
+                      </li>
+                      <li>
+                        <button type="button" class="addtocart-btn" title="Add to Cart"><i class="fa fa-cart-plus"
+                            aria-hidden="true"></i> </button>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="caption product-detail">
+                    <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i
+                          class="fa fa-star fa-stack-2x"></i></span> <span class="fa fa-stack"><i
+                          class="fa fa-star-o fa-stack-2x"></i><i class="fa fa-star fa-stack-2x"></i></span> <span
+                        class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i
+                          class="fa fa-star fa-stack-2x"></i></span> <span class="fa fa-stack"><i
+                          class="fa fa-star-o fa-stack-2x"></i><i class="fa fa-star fa-stack-2x"></i></span> <span
+                        class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span> </div>
+                    <h4 class="product-name"><a href="#" title="Casual Shirt With Ruffle Hem">Casual Shirt With Ruffle
+                        Hem</a></h4>
+                    <p class="price product-price">$122.00<span class="price-tax">Ex Tax: $100.00</span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- product-layout 5 -->
+            <div class="product-layout  product-grid  col-lg-3 col-md-4 col-sm-6 col-xs-12">
+              <div class="item">
+                <div class="product-thumb">
+                  <div class="image product-imageblock"> <a href="product.html"> <img
+                        src="image/product/fera-du-lac-2-pieces-622-622.jpg" alt="fera du lac" title="fera du lac"
+                        class="img-responsive" /> <img src="image/product/fera-du-lac-2-pieces-622-622.jpg"
+                        alt="fera du lac" title="fera du lac" class="img-responsive" /> </a>
+                    <ul class="button-group">
+                      <li>
+                        <button type="button" class="wishlist" data-toggle="tooltip" data-placement="top"
+                          title="Add to Wish List"><i class="fa fa-heart-o"></i></button>
+                      </li>
+                      <li>
+                        <button type="button" class="quick-view" data-toggle="tooltip" data-placement="top"
+                          title="Quick View"><i class="fa fa-eye"></i></button>
+                      </li>
+                      <li>
+                        <button type="button" class="addtocart-btn" title="Add to Cart"><i class="fa fa-cart-plus"
+                            aria-hidden="true"></i> </button>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="caption product-detail">
+                    <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i
+                          class="fa fa-star fa-stack-2x"></i></span> <span class="fa fa-stack"><i
+                          class="fa fa-star-o fa-stack-2x"></i><i class="fa fa-star fa-stack-2x"></i></span> <span
+                        class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i
+                          class="fa fa-star fa-stack-2x"></i></span> <span class="fa fa-stack"><i
+                          class="fa fa-star-o fa-stack-2x"></i><i class="fa fa-star fa-stack-2x"></i></span> <span
+                        class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span> </div>
+                    <h4 class="product-name"><a href="#" title="Casual Shirt With Ruffle Hem">Casual Shirt With Ruffle
+                        Hem</a></h4>
+                    <p class="price product-price">$122.00<span class="price-tax">Ex Tax: $100.00</span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- product-layout 6 -->
+            <div class="product-layout  product-grid  col-lg-3 col-md-4 col-sm-6 col-xs-12">
+              <div class="item">
+                <div class="product-thumb">
+                  <div class="image product-imageblock"> <a href="product.html"> <img
+                        src="image/product/fera-du-lac-2-pieces-622-622.jpg" alt="fera du lac" title="fera du lac"
+                        class="img-responsive" /> <img src="image/product/fera-du-lac-2-pieces-622-622.jpg"
+                        alt="fera du lac" title="fera du lac" class="img-responsive" /> </a>
+                    <ul class="button-group">
+                      <li>
+                        <button type="button" class="wishlist" data-toggle="tooltip" data-placement="top"
+                          title="Add to Wish List"><i class="fa fa-heart-o"></i></button>
+                      </li>
+                      <li>
+                        <button type="button" class="quick-view" data-toggle="tooltip" data-placement="top"
+                          title="Quick View"><i class="fa fa-eye"></i></button>
+                      </li>
+                      <li>
+                        <button type="button" class="addtocart-btn" title="Add to Cart"><i class="fa fa-cart-plus"
+                            aria-hidden="true"></i> </button>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="caption product-detail">
+                    <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i
+                          class="fa fa-star fa-stack-2x"></i></span> <span class="fa fa-stack"><i
+                          class="fa fa-star-o fa-stack-2x"></i><i class="fa fa-star fa-stack-2x"></i></span> <span
+                        class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i
+                          class="fa fa-star fa-stack-2x"></i></span> <span class="fa fa-stack"><i
+                          class="fa fa-star-o fa-stack-2x"></i><i class="fa fa-star fa-stack-2x"></i></span> <span
+                        class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span> </div>
+                    <h4 class="product-name"><a href="#" title="Casual Shirt With Ruffle Hem">Casual Shirt With Ruffle
+                        Hem</a></h4>
+                    <p class="price product-price">$122.00<span class="price-tax">Ex Tax: $100.00</span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- product-layout 7 -->
+            <div class="product-layout  product-grid  col-lg-3 col-md-4 col-sm-6 col-xs-12">
+              <div class="item">
+                <div class="product-thumb">
+                  <div class="image product-imageblock"> <a href="product.html"> <img
+                        src="image/product/fera-du-lac-2-pieces-622-622.jpg" alt="fera du lac" title="fera du lac"
+                        class="img-responsive" /> <img src="image/product/fera-du-lac-2-pieces-622-622.jpg"
+                        alt="fera du lac" title="fera du lac" class="img-responsive" /> </a>
+                    <ul class="button-group">
+                      <li>
+                        <button type="button" class="wishlist" data-toggle="tooltip" data-placement="top"
+                          title="Add to Wish List"><i class="fa fa-heart-o"></i></button>
+                      </li>
+                      <li>
+                        <button type="button" class="quick-view" data-toggle="tooltip" data-placement="top"
+                          title="Quick View"><i class="fa fa-eye"></i></button>
+                      </li>
+                      <li>
+                        <button type="button" class="addtocart-btn" title="Add to Cart"><i class="fa fa-cart-plus"
+                            aria-hidden="true"></i> </button>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="caption product-detail">
+                    <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i
+                          class="fa fa-star fa-stack-2x"></i></span> <span class="fa fa-stack"><i
+                          class="fa fa-star-o fa-stack-2x"></i><i class="fa fa-star fa-stack-2x"></i></span> <span
+                        class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i
+                          class="fa fa-star fa-stack-2x"></i></span> <span class="fa fa-stack"><i
+                          class="fa fa-star-o fa-stack-2x"></i><i class="fa fa-star fa-stack-2x"></i></span> <span
+                        class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span> </div>
+                    <h4 class="product-name"><a href="#" title="Casual Shirt With Ruffle Hem">Casual Shirt With Ruffle
+                        Hem</a></h4>
+                    <p class="price product-price">$122.00<span class="price-tax">Ex Tax: $100.00</span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- product-layout 8 -->
+            <div class="product-layout  product-grid  col-lg-3 col-md-4 col-sm-6 col-xs-12">
+              <div class="item">
+                <div class="product-thumb">
+                  <div class="image product-imageblock"> <a href="product.html"> <img
+                        src="image/product/fera-du-lac-2-pieces-622-622.jpg" alt="fera du lac" title="fera du lac"
+                        class="img-responsive" /> <img src="image/product/fera-du-lac-2-pieces-622-622.jpg"
+                        alt="fera du lac" title="fera du lac" class="img-responsive" /> </a>
+                    <ul class="button-group">
+                      <li>
+                        <button type="button" class="wishlist" data-toggle="tooltip" data-placement="top"
+                          title="Add to Wish List"><i class="fa fa-heart-o"></i></button>
+                      </li>
+                      <li>
+                        <button type="button" class="quick-view" data-toggle="tooltip" data-placement="top"
+                          title="Quick View"><i class="fa fa-eye"></i></button>
+                      </li>
+                      <li>
+                        <button type="button" class="addtocart-btn" title="Add to Cart"><i class="fa fa-cart-plus"
+                            aria-hidden="true"></i> </button>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="caption product-detail">
+                    <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i
+                          class="fa fa-star fa-stack-2x"></i></span> <span class="fa fa-stack"><i
+                          class="fa fa-star-o fa-stack-2x"></i><i class="fa fa-star fa-stack-2x"></i></span> <span
+                        class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i
+                          class="fa fa-star fa-stack-2x"></i></span> <span class="fa fa-stack"><i
+                          class="fa fa-star-o fa-stack-2x"></i><i class="fa fa-star fa-stack-2x"></i></span> <span
+                        class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span> </div>
+                    <h4 class="product-name"><a href="#" title="Casual Shirt With Ruffle Hem">Casual Shirt With Ruffle
+                        Hem</a></h4>
+                    <p class="price product-price">$122.00<span class="price-tax">Ex Tax: $100.00</span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- /product-layout -->
+            <div class="viewmore">
+              <div class="btn">View More All Products</div>
+            </div>
+          </div>
+          <!-- /tab-living-->
+
+          <!-- tab-kitche -->
+          <div id="tab-kitche" class="tab-content">
+            <!-- tab-kitche 1 -->
+            <div class="product-layout  product-grid  col-lg-3 col-md-4 col-sm-6 col-xs-12">
+              <div class="item">
+                <div class="product-thumb">
+                  <div class="image product-imageblock"> <a href="product.html"> <img
+                        src="image/product/fera-du-lac-2-pieces-622-622.jpg" alt="fera du lac" title="fera du lac"
+                        class="img-responsive" /> <img src="image/product/fera-du-lac-2-pieces-622-622.jpg"
+                        alt="fera du lac" title="fera du lac" class="img-responsive" /> </a>
+                    <ul class="button-group">
+                      <li>
+                        <button type="button" class="wishlist" data-toggle="tooltip" data-placement="top"
+                          title="Add to Wish List"><i class="fa fa-heart-o"></i></button>
+                      </li>
+                      <li>
+                        <button type="button" class="quick-view" data-toggle="tooltip" data-placement="top"
+                          title="Quick View"><i class="fa fa-eye"></i></button>
+                      </li>
+                      <li>
+                        <button type="button" class="addtocart-btn" title="Add to Cart"><i class="fa fa-cart-plus"
+                            aria-hidden="true"></i> </button>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="caption product-detail">
+                    <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i
+                          class="fa fa-star fa-stack-2x"></i></span> <span class="fa fa-stack"><i
+                          class="fa fa-star-o fa-stack-2x"></i><i class="fa fa-star fa-stack-2x"></i></span> <span
+                        class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i
+                          class="fa fa-star fa-stack-2x"></i></span> <span class="fa fa-stack"><i
+                          class="fa fa-star-o fa-stack-2x"></i><i class="fa fa-star fa-stack-2x"></i></span> <span
+                        class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span> </div>
+                    <h4 class="product-name"><a href="#" title="Casual Shirt With Ruffle Hem">Casual Shirt With Ruffle
+                        Hem</a></h4>
+                    <p class="price product-price">$122.00<span class="price-tax">Ex Tax: $100.00</span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--  -->
+            <div class="product-layout  product-grid  col-lg-3 col-md-4 col-sm-6 col-xs-12">
+              <div class="item">
+                <div class="product-thumb">
+                  <div class="image product-imageblock"> <a href="product.html"> <img
+                        src="image/product/fera-du-lac-2-pieces-622-622.jpg" alt="fera du lac" title="fera du lac"
+                        class="img-responsive" /> <img src="image/product/fera-du-lac-2-pieces-622-622.jpg"
+                        alt="fera du lac" title="fera du lac" class="img-responsive" /> </a>
+                    <ul class="button-group">
+                      <li>
+                        <button type="button" class="wishlist" data-toggle="tooltip" data-placement="top"
+                          title="Add to Wish List"><i class="fa fa-heart-o"></i></button>
+                      </li>
+                      <li>
+                        <button type="button" class="quick-view" data-toggle="tooltip" data-placement="top"
+                          title="Quick View"><i class="fa fa-eye"></i></button>
+                      </li>
+                      <li>
+                        <button type="button" class="addtocart-btn" title="Add to Cart"><i class="fa fa-cart-plus"
+                            aria-hidden="true"></i> </button>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="caption product-detail">
+                    <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i
+                          class="fa fa-star fa-stack-2x"></i></span> <span class="fa fa-stack"><i
+                          class="fa fa-star-o fa-stack-2x"></i><i class="fa fa-star fa-stack-2x"></i></span> <span
+                        class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i
+                          class="fa fa-star fa-stack-2x"></i></span> <span class="fa fa-stack"><i
+                          class="fa fa-star-o fa-stack-2x"></i><i class="fa fa-star fa-stack-2x"></i></span> <span
+                        class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span> </div>
+                    <h4 class="product-name"><a href="#" title="Casual Shirt With Ruffle Hem">Casual Shirt With Ruffle
+                        Hem</a></h4>
+                    <p class="price product-price">$122.00<span class="price-tax">Ex Tax: $100.00</span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--  -->
+            <div class="product-layout  product-grid  col-lg-3 col-md-4 col-sm-6 col-xs-12">
+              <div class="item">
+                <div class="product-thumb">
+                  <div class="image product-imageblock"> <a href="product.html"> <img
+                        src="image/product/fera-du-lac-2-pieces-622-622.jpg" alt="fera du lac" title="fera du lac"
+                        class="img-responsive" /> <img src="image/product/fera-du-lac-2-pieces-622-622.jpg"
+                        alt="fera du lac" title="fera du lac" class="img-responsive" /> </a>
+                    <ul class="button-group">
+                      <li>
+                        <button type="button" class="wishlist" data-toggle="tooltip" data-placement="top"
+                          title="Add to Wish List"><i class="fa fa-heart-o"></i></button>
+                      </li>
+                      <li>
+                        <button type="button" class="quick-view" data-toggle="tooltip" data-placement="top"
+                          title="Quick View"><i class="fa fa-eye"></i></button>
+                      </li>
+                      <li>
+                        <button type="button" class="addtocart-btn" title="Add to Cart"><i class="fa fa-cart-plus"
+                            aria-hidden="true"></i> </button>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="caption product-detail">
+                    <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i
+                          class="fa fa-star fa-stack-2x"></i></span> <span class="fa fa-stack"><i
+                          class="fa fa-star-o fa-stack-2x"></i><i class="fa fa-star fa-stack-2x"></i></span> <span
+                        class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i
+                          class="fa fa-star fa-stack-2x"></i></span> <span class="fa fa-stack"><i
+                          class="fa fa-star-o fa-stack-2x"></i><i class="fa fa-star fa-stack-2x"></i></span> <span
+                        class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span> </div>
+                    <h4 class="product-name"><a href="#" title="Casual Shirt With Ruffle Hem">Casual Shirt With Ruffle
+                        Hem</a></h4>
+                    <p class="price product-price">$122.00<span class="price-tax">Ex Tax: $100.00</span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--  -->
+            <div class="product-layout  product-grid  col-lg-3 col-md-4 col-sm-6 col-xs-12">
+              <div class="item">
+                <div class="product-thumb">
+                  <div class="image product-imageblock"> <a href="product.html"> <img
+                        src="image/product/fera-du-lac-2-pieces-622-622.jpg" alt="fera du lac" title="fera du lac"
+                        class="img-responsive" /> <img src="image/product/fera-du-lac-2-pieces-622-622.jpg"
+                        alt="fera du lac" title="fera du lac" class="img-responsive" /> </a>
+                    <ul class="button-group">
+                      <li>
+                        <button type="button" class="wishlist" data-toggle="tooltip" data-placement="top"
+                          title="Add to Wish List"><i class="fa fa-heart-o"></i></button>
+                      </li>
+                      <li>
+                        <button type="button" class="quick-view" data-toggle="tooltip" data-placement="top"
+                          title="Quick View"><i class="fa fa-eye"></i></button>
+                      </li>
+                      <li>
+                        <button type="button" class="addtocart-btn" title="Add to Cart"><i class="fa fa-cart-plus"
+                            aria-hidden="true"></i> </button>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="caption product-detail">
+                    <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i
+                          class="fa fa-star fa-stack-2x"></i></span> <span class="fa fa-stack"><i
+                          class="fa fa-star-o fa-stack-2x"></i><i class="fa fa-star fa-stack-2x"></i></span> <span
+                        class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i
+                          class="fa fa-star fa-stack-2x"></i></span> <span class="fa fa-stack"><i
+                          class="fa fa-star-o fa-stack-2x"></i><i class="fa fa-star fa-stack-2x"></i></span> <span
+                        class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span> </div>
+                    <h4 class="product-name"><a href="#" title="Casual Shirt With Ruffle Hem">Casual Shirt With Ruffle
+                        Hem</a></h4>
+                    <p class="price product-price">$122.00<span class="price-tax">Ex Tax: $100.00</span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--  -->
+            <div class="product-layout  product-grid  col-lg-3 col-md-4 col-sm-6 col-xs-12">
+              <div class="item">
+                <div class="product-thumb">
+                  <div class="image product-imageblock"> <a href="product.html"> <img
+                        src="image/product/fera-du-lac-2-pieces-622-622.jpg" alt="fera du lac" title="fera du lac"
+                        class="img-responsive" /> <img src="image/product/fera-du-lac-2-pieces-622-622.jpg"
+                        alt="fera du lac" title="fera du lac" class="img-responsive" /> </a>
+                    <ul class="button-group">
+                      <li>
+                        <button type="button" class="wishlist" data-toggle="tooltip" data-placement="top"
+                          title="Add to Wish List"><i class="fa fa-heart-o"></i></button>
+                      </li>
+                      <li>
+                        <button type="button" class="quick-view" data-toggle="tooltip" data-placement="top"
+                          title="Quick View"><i class="fa fa-eye"></i></button>
+                      </li>
+                      <li>
+                        <button type="button" class="addtocart-btn" title="Add to Cart"><i class="fa fa-cart-plus"
+                            aria-hidden="true"></i> </button>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="caption product-detail">
+                    <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i
+                          class="fa fa-star fa-stack-2x"></i></span> <span class="fa fa-stack"><i
+                          class="fa fa-star-o fa-stack-2x"></i><i class="fa fa-star fa-stack-2x"></i></span> <span
+                        class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i
+                          class="fa fa-star fa-stack-2x"></i></span> <span class="fa fa-stack"><i
+                          class="fa fa-star-o fa-stack-2x"></i><i class="fa fa-star fa-stack-2x"></i></span> <span
+                        class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span> </div>
+                    <h4 class="product-name"><a href="#" title="Casual Shirt With Ruffle Hem">Casual Shirt With Ruffle
+                        Hem</a></h4>
+                    <p class="price product-price">$122.00<span class="price-tax">Ex Tax: $100.00</span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--  -->
+            <div class="product-layout  product-grid  col-lg-3 col-md-4 col-sm-6 col-xs-12">
+              <div class="item">
+                <div class="product-thumb">
+                  <div class="image product-imageblock"> <a href="product.html"> <img
+                        src="image/product/fera-du-lac-2-pieces-622-622.jpg" alt="fera du lac" title="fera du lac"
+                        class="img-responsive" /> <img src="image/product/fera-du-lac-2-pieces-622-622.jpg"
+                        alt="fera du lac" title="fera du lac" class="img-responsive" /> </a>
+                    <ul class="button-group">
+                      <li>
+                        <button type="button" class="wishlist" data-toggle="tooltip" data-placement="top"
+                          title="Add to Wish List"><i class="fa fa-heart-o"></i></button>
+                      </li>
+                      <li>
+                        <button type="button" class="quick-view" data-toggle="tooltip" data-placement="top"
+                          title="Quick View"><i class="fa fa-eye"></i></button>
+                      </li>
+                      <li>
+                        <button type="button" class="addtocart-btn" title="Add to Cart"><i class="fa fa-cart-plus"
+                            aria-hidden="true"></i> </button>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="caption product-detail">
+                    <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i
+                          class="fa fa-star fa-stack-2x"></i></span> <span class="fa fa-stack"><i
+                          class="fa fa-star-o fa-stack-2x"></i><i class="fa fa-star fa-stack-2x"></i></span> <span
+                        class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i
+                          class="fa fa-star fa-stack-2x"></i></span> <span class="fa fa-stack"><i
+                          class="fa fa-star-o fa-stack-2x"></i><i class="fa fa-star fa-stack-2x"></i></span> <span
+                        class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span> </div>
+                    <h4 class="product-name"><a href="#" title="Casual Shirt With Ruffle Hem">Casual Shirt With Ruffle
+                        Hem</a></h4>
+                    <p class="price product-price">$122.00<span class="price-tax">Ex Tax: $100.00</span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--  -->
+            <div class="product-layout  product-grid  col-lg-3 col-md-4 col-sm-6 col-xs-12">
+              <div class="item">
+                <div class="product-thumb">
+                  <div class="image product-imageblock"> <a href="product.html"> <img
+                        src="image/product/fera-du-lac-2-pieces-622-622.jpg" alt="fera du lac" title="fera du lac"
+                        class="img-responsive" /> <img src="image/product/fera-du-lac-2-pieces-622-622.jpg"
+                        alt="fera du lac" title="fera du lac" class="img-responsive" /> </a>
+                    <ul class="button-group">
+                      <li>
+                        <button type="button" class="wishlist" data-toggle="tooltip" data-placement="top"
+                          title="Add to Wish List"><i class="fa fa-heart-o"></i></button>
+                      </li>
+                      <li>
+                        <button type="button" class="quick-view" data-toggle="tooltip" data-placement="top"
+                          title="Quick View"><i class="fa fa-eye"></i></button>
+                      </li>
+                      <li>
+                        <button type="button" class="addtocart-btn" title="Add to Cart"><i class="fa fa-cart-plus"
+                            aria-hidden="true"></i> </button>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="caption product-detail">
+                    <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i
+                          class="fa fa-star fa-stack-2x"></i></span> <span class="fa fa-stack"><i
+                          class="fa fa-star-o fa-stack-2x"></i><i class="fa fa-star fa-stack-2x"></i></span> <span
+                        class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i
+                          class="fa fa-star fa-stack-2x"></i></span> <span class="fa fa-stack"><i
+                          class="fa fa-star-o fa-stack-2x"></i><i class="fa fa-star fa-stack-2x"></i></span> <span
+                        class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span> </div>
+                    <h4 class="product-name"><a href="#" title="Casual Shirt With Ruffle Hem">Casual Shirt With Ruffle
+                        Hem</a></h4>
+                    <p class="price product-price">$122.00<span class="price-tax">Ex Tax: $100.00</span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--  -->
+            <div class="product-layout  product-grid  col-lg-3 col-md-4 col-sm-6 col-xs-12">
+              <div class="item">
+                <div class="product-thumb">
+                  <div class="image product-imageblock"> <a href="product.html"> <img
+                        src="image/product/fera-du-lac-2-pieces-622-622.jpg" alt="fera du lac" title="fera du lac"
+                        class="img-responsive" /> <img src="image/product/fera-du-lac-2-pieces-622-622.jpg"
+                        alt="fera du lac" title="fera du lac" class="img-responsive" /> </a>
+                    <ul class="button-group">
+                      <li>
+                        <button type="button" class="wishlist" data-toggle="tooltip" data-placement="top"
+                          title="Add to Wish List"><i class="fa fa-heart-o"></i></button>
+                      </li>
+                      <li>
+                        <button type="button" class="quick-view" data-toggle="tooltip" data-placement="top"
+                          title="Quick View"><i class="fa fa-eye"></i></button>
+                      </li>
+                      <li>
+                        <button type="button" class="addtocart-btn" title="Add to Cart"><i class="fa fa-cart-plus"
+                            aria-hidden="true"></i> </button>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="caption product-detail">
+                    <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i
+                          class="fa fa-star fa-stack-2x"></i></span> <span class="fa fa-stack"><i
+                          class="fa fa-star-o fa-stack-2x"></i><i class="fa fa-star fa-stack-2x"></i></span> <span
+                        class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i
+                          class="fa fa-star fa-stack-2x"></i></span> <span class="fa fa-stack"><i
+                          class="fa fa-star-o fa-stack-2x"></i><i class="fa fa-star fa-stack-2x"></i></span> <span
+                        class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span> </div>
+                    <h4 class="product-name"><a href="#" title="Casual Shirt With Ruffle Hem">Casual Shirt With Ruffle
+                        Hem</a></h4>
+                    <p class="price product-price">$122.00<span class="price-tax">Ex Tax: $100.00</span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--  -->
+            <div class="viewmore">
+              <div class="btn">View More All Products</div>
+            </div>
+          </div>
+          <!--/ tab-kitche -->
+          <!-- tab-decor-->
+          <div id="tab-outdoo" class="tab-content">
+            <!-- tab-decor1 -->
+            <div class="product-layout  product-grid  col-lg-3 col-md-4 col-sm-6 col-xs-12">
+              <div class="item">
+                <div class="product-thumb">
+                  <div class="image product-imageblock"> <a href="product.html"> <img
+                        src="image/product/fera-du-lac-2-pieces-622-622.jpg" alt="fera du lac" title="fera du lac"
+                        class="img-responsive" /> <img src="image/product/fera-du-lac-2-pieces-622-622.jpg"
+                        alt="fera du lac" title="fera du lac" class="img-responsive" /> </a>
+                    <ul class="button-group">
+                      <li>
+                        <button type="button" class="wishlist" data-toggle="tooltip" data-placement="top"
+                          title="Add to Wish List"><i class="fa fa-heart-o"></i></button>
+                      </li>
+                      <li>
+                        <button type="button" class="quick-view" data-toggle="tooltip" data-placement="top"
+                          title="Quick View"><i class="fa fa-eye"></i></button>
+                      </li>
+                      <li>
+                        <button type="button" class="addtocart-btn" title="Add to Cart"><i class="fa fa-cart-plus"
+                            aria-hidden="true"></i> </button>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="caption product-detail">
+                    <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i
+                          class="fa fa-star fa-stack-2x"></i></span> <span class="fa fa-stack"><i
+                          class="fa fa-star-o fa-stack-2x"></i><i class="fa fa-star fa-stack-2x"></i></span> <span
+                        class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i
+                          class="fa fa-star fa-stack-2x"></i></span> <span class="fa fa-stack"><i
+                          class="fa fa-star-o fa-stack-2x"></i><i class="fa fa-star fa-stack-2x"></i></span> <span
+                        class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span> </div>
+                    <h4 class="product-name"><a href="#" title="Casual Shirt With Ruffle Hem">Casual Shirt With Ruffle
+                        Hem</a></h4>
+                    <p class="price product-price">$122.00<span class="price-tax">Ex Tax: $100.00</span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--  -->
+            <div class="product-layout  product-grid  col-lg-3 col-md-4 col-sm-6 col-xs-12">
+              <div class="item">
+                <div class="product-thumb">
+                  <div class="image product-imageblock"> <a href="product.html"> <img
+                        src="image/product/fera-du-lac-2-pieces-622-622.jpg" alt="fera du lac" title="fera du lac"
+                        class="img-responsive" /> <img src="image/product/fera-du-lac-2-pieces-622-622.jpg"
+                        alt="fera du lac" title="fera du lac" class="img-responsive" /> </a>
+                    <ul class="button-group">
+                      <li>
+                        <button type="button" class="wishlist" data-toggle="tooltip" data-placement="top"
+                          title="Add to Wish List"><i class="fa fa-heart-o"></i></button>
+                      </li>
+                      <li>
+                        <button type="button" class="quick-view" data-toggle="tooltip" data-placement="top"
+                          title="Quick View"><i class="fa fa-eye"></i></button>
+                      </li>
+                      <li>
+                        <button type="button" class="addtocart-btn" title="Add to Cart"><i class="fa fa-cart-plus"
+                            aria-hidden="true"></i> </button>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="caption product-detail">
+                    <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i
+                          class="fa fa-star fa-stack-2x"></i></span> <span class="fa fa-stack"><i
+                          class="fa fa-star-o fa-stack-2x"></i><i class="fa fa-star fa-stack-2x"></i></span> <span
+                        class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i
+                          class="fa fa-star fa-stack-2x"></i></span> <span class="fa fa-stack"><i
+                          class="fa fa-star-o fa-stack-2x"></i><i class="fa fa-star fa-stack-2x"></i></span> <span
+                        class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span> </div>
+                    <h4 class="product-name"><a href="#" title="Casual Shirt With Ruffle Hem">Casual Shirt With Ruffle
+                        Hem</a></h4>
+                    <p class="price product-price">$122.00<span class="price-tax">Ex Tax: $100.00</span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--  -->
+            <div class="product-layout  product-grid  col-lg-3 col-md-4 col-sm-6 col-xs-12">
+              <div class="item">
+                <div class="product-thumb">
+                  <div class="image product-imageblock"> <a href="product.html"> <img
+                        src="image/product/fera-du-lac-2-pieces-622-622.jpg" alt="fera du lac" title="fera du lac"
+                        class="img-responsive" /> <img src="image/product/fera-du-lac-2-pieces-622-622.jpg"
+                        alt="fera du lac" title="fera du lac" class="img-responsive" /> </a>
+                    <ul class="button-group">
+                      <li>
+                        <button type="button" class="wishlist" data-toggle="tooltip" data-placement="top"
+                          title="Add to Wish List"><i class="fa fa-heart-o"></i></button>
+                      </li>
+                      <li>
+                        <button type="button" class="quick-view" data-toggle="tooltip" data-placement="top"
+                          title="Quick View"><i class="fa fa-eye"></i></button>
+                      </li>
+                      <li>
+                        <button type="button" class="addtocart-btn" title="Add to Cart"><i class="fa fa-cart-plus"
+                            aria-hidden="true"></i> </button>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="caption product-detail">
+                    <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i
+                          class="fa fa-star fa-stack-2x"></i></span> <span class="fa fa-stack"><i
+                          class="fa fa-star-o fa-stack-2x"></i><i class="fa fa-star fa-stack-2x"></i></span> <span
+                        class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i
+                          class="fa fa-star fa-stack-2x"></i></span> <span class="fa fa-stack"><i
+                          class="fa fa-star-o fa-stack-2x"></i><i class="fa fa-star fa-stack-2x"></i></span> <span
+                        class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span> </div>
+                    <h4 class="product-name"><a href="#" title="Casual Shirt With Ruffle Hem">Casual Shirt With Ruffle
+                        Hem</a></h4>
+                    <p class="price product-price">$122.00<span class="price-tax">Ex Tax: $100.00</span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--  -->
+            <div class="product-layout  product-grid  col-lg-3 col-md-4 col-sm-6 col-xs-12">
+              <div class="item">
+                <div class="product-thumb">
+                  <div class="image product-imageblock"> <a href="product.html"> <img
+                        src="image/product/fera-du-lac-2-pieces-622-622.jpg" alt="fera du lac" title="fera du lac"
+                        class="img-responsive" /> <img src="image/product/fera-du-lac-2-pieces-622-622.jpg"
+                        alt="fera du lac" title="fera du lac" class="img-responsive" /> </a>
+                    <ul class="button-group">
+                      <li>
+                        <button type="button" class="wishlist" data-toggle="tooltip" data-placement="top"
+                          title="Add to Wish List"><i class="fa fa-heart-o"></i></button>
+                      </li>
+                      <li>
+                        <button type="button" class="quick-view" data-toggle="tooltip" data-placement="top"
+                          title="Quick View"><i class="fa fa-eye"></i></button>
+                      </li>
+                      <li>
+                        <button type="button" class="addtocart-btn" title="Add to Cart"><i class="fa fa-cart-plus"
+                            aria-hidden="true"></i> </button>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="caption product-detail">
+                    <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i
+                          class="fa fa-star fa-stack-2x"></i></span> <span class="fa fa-stack"><i
+                          class="fa fa-star-o fa-stack-2x"></i><i class="fa fa-star fa-stack-2x"></i></span> <span
+                        class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i
+                          class="fa fa-star fa-stack-2x"></i></span> <span class="fa fa-stack"><i
+                          class="fa fa-star-o fa-stack-2x"></i><i class="fa fa-star fa-stack-2x"></i></span> <span
+                        class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span> </div>
+                    <h4 class="product-name"><a href="#" title="Casual Shirt With Ruffle Hem">Casual Shirt With Ruffle
+                        Hem</a></h4>
+                    <p class="price product-price">$122.00<span class="price-tax">Ex Tax: $100.00</span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--  -->
+            <div class="product-layout  product-grid  col-lg-3 col-md-4 col-sm-6 col-xs-12">
+              <div class="item">
+                <div class="product-thumb">
+                  <div class="image product-imageblock"> <a href="product.html"> <img
+                        src="image/product/fera-du-lac-2-pieces-622-622.jpg" alt="fera du lac" title="fera du lac"
+                        class="img-responsive" /> <img src="image/product/fera-du-lac-2-pieces-622-622.jpg"
+                        alt="fera du lac" title="fera du lac" class="img-responsive" /> </a>
+                    <ul class="button-group">
+                      <li>
+                        <button type="button" class="wishlist" data-toggle="tooltip" data-placement="top"
+                          title="Add to Wish List"><i class="fa fa-heart-o"></i></button>
+                      </li>
+                      <li>
+                        <button type="button" class="quick-view" data-toggle="tooltip" data-placement="top"
+                          title="Quick View"><i class="fa fa-eye"></i></button>
+                      </li>
+                      <li>
+                        <button type="button" class="addtocart-btn" title="Add to Cart"><i class="fa fa-cart-plus"
+                            aria-hidden="true"></i> </button>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="caption product-detail">
+                    <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i
+                          class="fa fa-star fa-stack-2x"></i></span> <span class="fa fa-stack"><i
+                          class="fa fa-star-o fa-stack-2x"></i><i class="fa fa-star fa-stack-2x"></i></span> <span
+                        class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i
+                          class="fa fa-star fa-stack-2x"></i></span> <span class="fa fa-stack"><i
+                          class="fa fa-star-o fa-stack-2x"></i><i class="fa fa-star fa-stack-2x"></i></span> <span
+                        class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span> </div>
+                    <h4 class="product-name"><a href="#" title="Casual Shirt With Ruffle Hem">Casual Shirt With Ruffle
+                        Hem</a></h4>
+                    <p class="price product-price">$122.00<span class="price-tax">Ex Tax: $100.00</span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--  -->
+            <div class="product-layout  product-grid  col-lg-3 col-md-4 col-sm-6 col-xs-12">
+              <div class="item">
+                <div class="product-thumb">
+                  <div class="image product-imageblock"> <a href="product.html"> <img
+                        src="image/product/fera-du-lac-2-pieces-622-622.jpg" alt="fera du lac" title="fera du lac"
+                        class="img-responsive" /> <img src="image/product/fera-du-lac-2-pieces-622-622.jpg"
+                        alt="fera du lac" title="fera du lac" class="img-responsive" /> </a>
+                    <ul class="button-group">
+                      <li>
+                        <button type="button" class="wishlist" data-toggle="tooltip" data-placement="top"
+                          title="Add to Wish List"><i class="fa fa-heart-o"></i></button>
+                      </li>
+                      <li>
+                        <button type="button" class="quick-view" data-toggle="tooltip" data-placement="top"
+                          title="Quick View"><i class="fa fa-eye"></i></button>
+                      </li>
+                      <li>
+                        <button type="button" class="addtocart-btn" title="Add to Cart"><i class="fa fa-cart-plus"
+                            aria-hidden="true"></i> </button>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="caption product-detail">
+                    <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i
+                          class="fa fa-star fa-stack-2x"></i></span> <span class="fa fa-stack"><i
+                          class="fa fa-star-o fa-stack-2x"></i><i class="fa fa-star fa-stack-2x"></i></span> <span
+                        class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i
+                          class="fa fa-star fa-stack-2x"></i></span> <span class="fa fa-stack"><i
+                          class="fa fa-star-o fa-stack-2x"></i><i class="fa fa-star fa-stack-2x"></i></span> <span
+                        class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span> </div>
+                    <h4 class="product-name"><a href="#" title="Casual Shirt With Ruffle Hem">Casual Shirt With Ruffle
+                        Hem</a></h4>
+                    <p class="price product-price">$122.00<span class="price-tax">Ex Tax: $100.00</span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--  -->
+            <div class="product-layout  product-grid  col-lg-3 col-md-4 col-sm-6 col-xs-12">
+              <div class="item">
+                <div class="product-thumb">
+                  <div class="image product-imageblock"> <a href="product.html"> <img
+                        src="image/product/fera-du-lac-2-pieces-622-622.jpg" alt="fera du lac" title="fera du lac"
+                        class="img-responsive" /> <img src="image/product/fera-du-lac-2-pieces-622-622.jpg"
+                        alt="fera du lac" title="fera du lac" class="img-responsive" /> </a>
+                    <ul class="button-group">
+                      <li>
+                        <button type="button" class="wishlist" data-toggle="tooltip" data-placement="top"
+                          title="Add to Wish List"><i class="fa fa-heart-o"></i></button>
+                      </li>
+                      <li>
+                        <button type="button" class="quick-view" data-toggle="tooltip" data-placement="top"
+                          title="Quick View"><i class="fa fa-eye"></i></button>
+                      </li>
+                      <li>
+                        <button type="button" class="addtocart-btn" title="Add to Cart"><i class="fa fa-cart-plus"
+                            aria-hidden="true"></i> </button>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="caption product-detail">
+                    <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i
+                          class="fa fa-star fa-stack-2x"></i></span> <span class="fa fa-stack"><i
+                          class="fa fa-star-o fa-stack-2x"></i><i class="fa fa-star fa-stack-2x"></i></span> <span
+                        class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i
+                          class="fa fa-star fa-stack-2x"></i></span> <span class="fa fa-stack"><i
+                          class="fa fa-star-o fa-stack-2x"></i><i class="fa fa-star fa-stack-2x"></i></span> <span
+                        class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span> </div>
+                    <h4 class="product-name"><a href="#" title="Casual Shirt With Ruffle Hem">Casual Shirt With Ruffle
+                        Hem</a></h4>
+                    <p class="price product-price">$122.00<span class="price-tax">Ex Tax: $100.00</span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--  -->
+            <div class="product-layout  product-grid  col-lg-3 col-md-4 col-sm-6 col-xs-12">
+              <div class="item">
+                <div class="product-thumb">
+                  <div class="image product-imageblock"> <a href="product.html"> <img
+                        src="image/product/fera-du-lac-2-pieces-622-622.jpg" alt="fera du lac" title="fera du lac"
+                        class="img-responsive" /> <img src="image/product/fera-du-lac-2-pieces-622-622.jpg"
+                        alt="fera du lac" title="fera du lac" class="img-responsive" /> </a>
+                    <ul class="button-group">
+                      <li>
+                        <button type="button" class="wishlist" data-toggle="tooltip" data-placement="top"
+                          title="Add to Wish List"><i class="fa fa-heart-o"></i></button>
+                      </li>
+                      <li>
+                        <button type="button" class="quick-view" data-toggle="tooltip" data-placement="top"
+                          title="Quick View"><i class="fa fa-eye"></i></button>
+                      </li>
+                      <li>
+                        <button type="button" class="addtocart-btn" title="Add to Cart"><i class="fa fa-cart-plus"
+                            aria-hidden="true"></i> </button>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="caption product-detail">
+                    <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i
+                          class="fa fa-star fa-stack-2x"></i></span> <span class="fa fa-stack"><i
+                          class="fa fa-star-o fa-stack-2x"></i><i class="fa fa-star fa-stack-2x"></i></span> <span
+                        class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i
+                          class="fa fa-star fa-stack-2x"></i></span> <span class="fa fa-stack"><i
+                          class="fa fa-star-o fa-stack-2x"></i><i class="fa fa-star fa-stack-2x"></i></span> <span
+                        class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span> </div>
+                    <h4 class="product-name"><a href="#" title="Casual Shirt With Ruffle Hem">Casual Shirt With Ruffle
+                        Hem</a></h4>
+                    <p class="price product-price">$122.00<span class="price-tax">Ex Tax: $100.00</span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="viewmore">
+              <div class="btn">View More All Products</div>
+            </div>
+          </div>
+          <!-- / tab-decor-->
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <footer>
+    <div class="cms_searvice">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 ">
+            <div class="cms-block1 z-depth-5">
+              <h4>Livraison gratuite</h4>
+              <p>Toutes les commandes de plus de 1500 frcfa</p>
+            </div>
+          </div>
+          <div class="col-md-3 ">
+            <div class="cms-block2">
+              <h4>Retours sous 3 jours</h4>
+              <p>Garantie de remboursement</p>
+            </div>
+          </div>
+          <div class="col-md-3 ">
+            <div class="cms-block3">
+              <h4>Assistance 24/7</h4>
+              <p>N'hésitez pas à nous contacter</p>
+            </div>
+          </div>
+          <div class="col-md-3 ">
+            <div class="cms-block4">
+              <h4>Achat en ligne </h4>
+              <p>Économisez jusqu'à 70% sur le magasin</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3 footer-block">
+          <h5 class="footer-title">INFORMATION</h5>
+          <ul class="list-unstyled ul-wrapper">
+            <li><a href="contact.html">A propos</a></li>
+            <li><a href="#">Informations de livraison</a></li>
+            <li><a href="#">termes et conditions</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-3 footer-block">
+          <h5 class="footer-title">MON COMPTE</h5>
+          <ul class="list-unstyled ul-wrapper">
+            <li><a href="contact.html">Contactez nous</a></li>
+            <li><a href="#"> Mon compte</a></li>
+            <li><a href="#">Order History</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-3 footer-block">
+          <h5 class="footer-title">Extras</h5>
+          <ul class="list-unstyled ul-wrapper">
+            <li><a href="#">Informations de livraison</a></li>
+            <li><a href="#">Contactez nous</a></li>
+            <li><a href="#">Plan du site</a></li>
+            <li><a href="#">Point de vente</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-3 footer-block">
+          <div class="content_footercms_right">
+            <div class="footer-contact">
+              <h5 class="contact-title footer-title">Contactez nous</h5>
+              <ul class="ul-wrapper">
+                <li><i class="fa fa-map-marker"></i><span class="location2">Adresse des bureaux:<br>
+                    218,Abidjan Côte d'ivoire<br>
+                    Cocody <br>
+                    II Plateaux</span></li>
+                <li><i class="fa fa-envelope"></i><span class="mail2"><a href="#">info@localhost.com</a><br>
+                    <a href="#">your@domain.com</a></span></li>
+                <li><i class="fa fa-mobile"></i><span class="phone2">+91 0987-654-321<br>
+                    +91 0987-654-321</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div id="bottom-footer">
+        <ul class="footer-link">
+          <li><a href="#">Accueil</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Work</a></li>
+          <li><a href="#">Team</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="copyright"> Copyright - <a class="yourstore" href="http://www.lionode.com/"> Created by Lionode
+            &copy; 2017 </a></div>
+        <div class="footer-bottom-cms">
+          <div class="footer-payment">
+            <ul>
+              <li class="mastero"><a href="#"><img alt="" src="image/payment/mastero.jpg"></a></li>
+              <li class="visa"><a href="#"><img alt="" src="image/payment/visa.jpg"></a></li>
+              <li class="currus"><a href="#"><img alt="" src="image/payment/currus.jpg"></a></li>
+              <li class="discover"><a href="#"><img alt="" src="image/payment/discover.jpg"></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a id="scrollup">Scroll</a>
+  </footer>
+  <script type="text/javascript" src="javascript/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="javascript/bootstrap/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="javascript/template_js/jstree.min.js"></script>
+  <script type="text/javascript" src="javascript/template_js/template.js"></script>
+  <script type="text/javascript" src="javascript/common.js"></script>
+  <script type="text/javascript" src="javascript/global.js"></script>
+  <script type="text/javascript" src="javascript/owl-carousel/owl.carousel.min.js"></script>
+
+  <script src="javascript/jquery.parallax.js"></script>
+  <script>
+    jQuery(document).ready(function ($) {
+      $('.parallax').parallax();
+    });
+    $('.carousel').carousel()
+  </script>
+</body>
+
+</html>

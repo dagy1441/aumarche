@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <title>AuMarcher</title>
+  <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="e-commerce site well design with responsive view." />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link href="image/favicon.png" rel="icon" type="image/png">
+  <link href="css/bootstrap.min.css" rel="stylesheet" media="screen" />
+  <link href="javascript/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700" rel="stylesheet" />
+  <link href="css/stylesheet.css" rel="stylesheet">
+  <link href="css/responsive.css" rel="stylesheet">
+  <link href="javascript/owl-carousel/owl.carousel.css" type="text/css" rel="stylesheet" media="screen" />
+  <link href="javascript/owl-carousel/owl.transitions.css" type="text/css" rel="stylesheet" media="screen" />
+</head>
+
+<body class="index">
+  <div class="preloader loader" style="display: block;"> <img src="image/loader.gif" alt="#" /></div>
+  <header>
+    <div class="header-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="top-left pull-left">
+              <div class="language">
+                <form action="#" method="post" enctype="multipart/form-data" id="language">
+                  <div class="btn-group">
+                    <button class="btn btn-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false"> Francais
+                      <span class="caret"></span></button>
+                    <ul class="dropdown-menu">
+                      <li><a href="#"> French</a></li>
+                      <li><a href="#"> English</a></li>
+                    </ul>
+                  </div>
+                </form>
+              </div>
+              <div class="currency">
+                <form action="#" method="post" enctype="multipart/form-data" id="currency">
+                  <div class="btn-group">
+                    <button class="btn btn-link dropdown-toggle" data-toggle="dropdown"> <strong>USD</strong> <span
+                        class="caret"></span> </button>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">FCfa</a></li>
+                      <li><a href="#">Euro</a></li>
+                      <li><a href="#">USD</a></li>
+                    </ul>
+                  </div>
+                </form>
+              </div>
+              <div class="wel-come-msg"> Bienvenue au marcher ! </div>
+            </div>
+            <div class="top-right pull-right">
+              <div id="top-links" class="nav pull-right">
+                <ul class="list-inline">
+                  <li class="dropdown"><a href="#" title="My Account" class="dropdown-toggle" data-toggle="dropdown"><i
+                        class="fa fa-user" aria-hidden="true"></i><span>Mon Compte</span> <span
+                        class="caret"></span></a>
+                    <ul class="dropdown-menu dropdown-menu-right">
+                      <li><a href="register.html">Register</a></li>
+                      <li><a href="login.html">Login</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#" id="wishlist-total" title="Wish List (0)"><i class="fa fa-heart"
+                        aria-hidden="true"></i><span>Liste des souhaits</span><span> (0)</span></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="header-inner">
+        <div class="col-sm-3 col-xs-3 header-left">
+          <div id="logo"> <a href="index.html"><img src="image/logo.png" title="E-Commerce" alt="E-Commerce"
+                class="img-responsive" /></a> </div>
+        </div>
+        <div class="col-sm-9 col-xs-9 header-right">
+          <div id="search" class="input-group">
+            <input type="text" name="search" value="" placeholder="Rechercher ..." class="form-control input-lg" />
+            <span class="input-group-btn">
+              <button type="button" class="btn btn-default btn-lg"><span>Recherche</span></button>
+            </span> </div>
+          <div id="cart" class="btn-group btn-block">
+            <button type="button" class="btn btn-inverse btn-block btn-lg dropdown-toggle cart-dropdown-button"> <span
+                id="cart-total"> <span>Shopping Cart</span><br>
+                3 Produit(s) - 20000 FCfa</span></button>
+            <ul class="dropdown-menu pull-right cart-dropdown-menu">
+              <li>
+                <table class="table table-striped">
+                  <tbody>
+                    <tr>
+                      <td class="text-center"><a href="#"><img class="img-thumbnail" title="lieu-jaune"
+                            alt="lorem ippsum dolor dummy" src="image/product/lieu-jaune-56-32.png"></a></td>
+                      <td class="text-left"><a href="#">lieu-jaune</a></td>
+                      <td class="text-right">x 1</td>
+                      <td class="text-right">1000 FCfa</td>
+                      <td class="text-center"><button class="btn btn-danger btn-xs" title="Remove" type="button"><i
+                            class="fa fa-trash-o"></i></button></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li>
+                <table class="table table-striped">
+                  <tbody>
+                    <tr>
+                      <td class="text-center"><a href="#"><img class="img-thumbnail" title="bar-sauvage"
+                            alt="lorem ippsum dolor dummy" src="image/product/bar-sauvage-52-26.jpg"></a></td>
+                      <td class="text-left"><a href="#">bar-sauvage</a></td>
+                      <td class="text-right">x 2</td>
+                      <td class="text-right">15.000 FCfa</td>
+                      <td class="text-center"><button class="btn btn-danger btn-xs" title="Remove" type="button"><i
+                            class="fa fa-times"></i></button></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li>
+                <table class="table table-striped">
+                  <tbody>
+                    <tr>
+                      <td class="text-center"><a href="#"><img class="img-thumbnail" title="lorem ippsum dolor dummy"
+                            alt="lorem ippsum dolor dummy"
+                            src="image/product/carpe-videe-la-piece-13kg - Copie.jpg"></a></td>
+                      <td class="text-left"><a href="#">carpe</a></td>
+                      <td class="text-right">x 3</td>
+                      <td class="text-right">1.500FCfa</td>
+                      <td class="text-center"><button class="btn btn-danger btn-xs" title="Remove" type="button"><i
+                            class="fa fa-times"></i></button></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li>
+                <div>
+                  <table class="table table-bordered">
+                    <tbody>
+                      <tr>
+                        <td class="text-right"><strong>Sub Total</strong></td>
+                        <td class="text-right">210.000FCfa</td>
+                      </tr>
+                      <tr>
+                        <td class="text-right"><strong>Eco Tax (-2.00)</strong></td>
+                        <td class="text-right">2.000FCfa</td>
+                      </tr>
+                      <tr>
+                        <td class="text-right"><strong>TVA (18%)</strong></td>
+                        <td class="text-right">42.000FCfa</td>
+                      </tr>
+                      <tr>
+                        <td class="text-right"><strong>Total</strong></td>
+                        <td class="text-right">254.000FCfa</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <p class="text-right"> <span class="btn-viewcart"><a href="cart.html"><strong><i
+                            class="fa fa-shopping-cart"></i>Panier</strong></a></span> <span class="btn-checkout"><a
+                        href="checkout.html"><strong><i class="fa fa-share"></i>Caisse</strong></a></span> </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- menu de navigation -->
+  <nav id="menu" class="navbar">
+    <div class="nav-inner">
+      <div class="navbar-header"><span id="category" class="visible-xs">Nos Produits Frais</span>
+        <button type="button" class="btn btn-navbar navbar-toggle"><i class="fa fa-bars"></i></button>
+      </div>
+      <div class="navbar-collapse">
+        <ul class="main-navigation">
+          <li><a href="index.html" class="parent"><i class="fa fa-home" aria-hidden="true"></i></a> </li>
+          <li class="dropdown"><a href="category.html" class="parent">Nos Produits</a></li>
+          <li><a href="category.html" class="parent">Poisson frais entier vidé</a> </li>
+          <li><a href="category.html" class="parent">Filets et pavés de poisson frais</a> </li>
+          <li><a href="category.html" class="parent">Fruits de Mer, Huîtres et Cruistacés</a> </li>
+          <li><a href="#" class="active parent">Nos Services <span class="caret"></span> </a>
+            <ul>
+              <li><a href="about-us.html">Au Marcher </a></li>
+              <li><a href="contact.html">Nous Contacter</a> </li>
+              <li><a href="contact.html">Point de vente</a> </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <hr>
+  <!-- carousel -->
+  <div class="mainbanner carousel slide" data-ride="carousel">
+    <div id="main-banner" class="owl-carousel home-slider carousel-inner">
+      <div class="item carousel-item"> <a href="#"><img src="image/banners/img-poisson/bar-sauvage.jpg"
+            alt="main-banner1" class="img-responsive" /></a>
+      </div>
+      <div class="item carousel-item"> <a href="#"><img src="image/banners/img-poisson/crevettes-grises.jpg"
+            alt="main-banner2" class="img-responsive" /></a>
+      </div>
+      <div class="item carousel-item"> <a href="#"><img src="image/banners/img-poisson/saumon-ecosse.jpg"
+            alt="main-banner3" class="img-responsive" /></a>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <!-- /carousel  -->
